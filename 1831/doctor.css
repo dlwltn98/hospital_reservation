@@ -1,0 +1,40 @@
+body {
+     font:14px/1.8 Arial, Helvetica, sans-serif;
+     /*background: radial-gradient(rgb(65,85,95), rgb(35,45,55));*/
+}
+
+
+.frame {
+      position : relative;
+      width:1150px;
+      height : 1300px;
+      margin: 0 auto;
+      border: 3px solid #aaa;
+	  }
+
+
+.header-box {
+      position : absolute;
+      width:1150px;
+      height : 150px;
+      margin: 0 auto;
+      text-align: center; 
+      border-bottom: 3px solid #aaa;
+      background-color: #F2FFED;
+	  }
+
+
+.header-logo {
+      position : absolute;
+	  top : 20px;
+	  }
+
+
+.logo {
+      position : absolute;
+	  left : 200px;
+	  bottom :50px;
+      font:70px georgia, time-new-roman, serif;
+      color: black;
+	  text-align: center;
+	  }

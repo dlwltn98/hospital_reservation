@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+<title>이지수 병원(ID찾기)</title>
+<link rel="stylesheet" type="text/css" href="homeframe.css">
+</head>
+
+<script>
+  function id_ch(){
+            if(!frm1.user_email.value){
+               alert('Email를 입력해주세요');
+            }
+            else{
+                frm1.submit();
+            }
+        }
+</script>
+ <body>
+ <div class="frame">
+      <div class="header-box">
+	    <?php
+        if(isset($_SESSION["user_id"]))
+        {
+       ?>
+        <a href="home.php" class="header-link">
+       <?php
+        }
+       ?>
+     <?php
+        if(isset($_SESSION["doc_id"]))
+        {
+       ?>
+        <a href="doc_home.php" class="header-link">
+       <?php
+        }
+       ?>
+	   <div class="header-logo"><img src="jisoo.png" width="420px" height="200px"></div></a>
+
+	   <ul class="sign-list">
+		  <?php
+        if(isset($_SESSION["user_id"]) == NULL && isset($_SESSION["doc_id"]) == NULL)
+        {
+       ?>
+		  <a href="login.php" class="head-link">로그인 </a>
+		  <a href="signup_select.php"" class="head-link"> 회원가입</a>
+       <?php
+        }
+       ?>
+
+	   <?php
+        if(isset($_SESSION["user_id"]))
+        {
+       ?>
+        <a href="logout.php"" class="head-link"> 로그아웃</a> |
+		<a href="my_page.php"" class="head-link"> my page</a>
+       <?php
+        }
+       ?>
+	   <?php
+        if(isset($_SESSION["doc_id"]))
+        {
+       ?>
+        <a href="logout.php"" class="head-link"> 로그아웃</a> |
+		<a href="my_page.php"" class="head-link"> my page</a>
+       <?php
+        }
+       ?>
+       </ul>
+
+	   <img src="dong.jpg" width="1150px" height="220px">
+	  </div> 
+	     <div id="nav-box">
+           <ul>
+               <li><a href="hospital_intro.php">병원소개</a>
+			       <ul>
+						<li><a href="chief_intro.php">병원장 소개</a></li>
+						<li><a href="location.php">오시는 길</a></li>
+						<li><a href="ETC.php">환자의 의무</a></li>
+					</ul>
+			   </li>
+               <li><a href="doctor_intro.php">의료진소개</a></li>
+               <li><a href="QnAList.php">병원문의</a></li>
+               <li><a href="healthinfo_list.php">건강정보</a></li>
+               <li><a href="BBS.php">자유게시판</a></li>
+           </ul>
+         </div>
+
+            <div id="f_id">아이디 찾기</div><br>
+            <form name=frm1 method='post' action='find_chid.php'>
+            <div class="f_id1">이메일 : &nbsp;</div>
+            <div class="f_id2"><input type=text size=20 name=user_email style="width:350px; height:45px;"></div>
+            <div class="f_id3"><img src="submit.jpg" onclick=id_ch() style="width:150px; heihgt:50px;"></div>
+			<div class="f_id4"><img src="findpw.jpg" onclick="location.href='findPW.php'" style="width:150px; heihgt:50px;"></div>
+		    <div class="f_id5"><img src="main.jpg" onclick="location.href='home.php'" style="width:150px; heihgt:50px;"></div>
+            </form>
+
+        <div style="position:absolute; left:480px; top:900px; font-size:20px;">의사 ID 찾기</div>
+<input type=button value="ID찾기" onclick="location.href='doc_findID.php'" style="position:absolute; left:595px; top:908px;">
+      
+	   <div class="footer">
+         <div class ="footer-box1"> 대표전화 : 031-2819-8111 </div>
+		 <div class ="footer-box2"> 응급의료센터 031-2434-9453 </div>
+		 <div class ="footer-box3"> 건강검진의료센터 031-9368-1683 </div>
+		 <div class ="footer-box4"> 개인정보처리방침| 환자의권리와의무 | 의료정보운영방침 | 홈페이지이용문의 </div>
+		 <div class ="footer-box5"> 성남시 수정수 양지동 611(양지로27번길 1)(12140)/사업자등록번호: 281-98-11193 이율리</div>
+ </div>
+ </body>
+</html>

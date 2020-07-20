@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/a/apache-extras.org/phpmailer/!svn/ver/214/trunk
+END
+changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/a/apache-extras.org/phpmailer/!svn/ver/214/trunk/changelog.txt
+END
+docs.ini
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/a/apache-extras.org/phpmailer/!svn/ver/1/trunk/docs.ini
+END
+class.pop3.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/a/apache-extras.org/phpmailer/!svn/ver/213/trunk/class.pop3.php
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/a/apache-extras.org/phpmailer/!svn/ver/214/trunk/class.phpmailer.php
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/a/apache-extras.org/phpmailer/!svn/ver/213/trunk/class.smtp.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/a/apache-extras.org/phpmailer/!svn/ver/199/trunk/README
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/a/apache-extras.org/phpmailer/!svn/ver/86/trunk/LICENSE
+END
